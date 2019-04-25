@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="success" >
+    <ion-title text-center> Iniciar session </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <!--AGREGADO DE IMAGEN -->  
+    <!-- AGREGO UNA CLASE CSS -->
+  <img class="icono" src="assets/icon/login.png" alt="">
+
+
+
+
+  <ion-item> 
+    <!-- nombre de lo que quiero -->
+    
+    <ion-label position="floating"> Correo electronico: </ion-label>
+<ion-input  type="text" [(ngModel)]="email" name="Email"></ion-input>
+  </ion-item>
+<!-- termina -->
+
+<!--comienza-->
+<ion-item>
+  
+  <!-- contreseña-->
+<ion-label position="floating">Contraseña </ion-label> 
+<ion-input type="password" [(ngModel)]="password" name="Contraseña"></ion-input>
+
+  </ion-item>
+<ion-button (click)="onSummitlogin()" expand="block" color="success">Entrar</ion-button>
+
+</ion-content>
